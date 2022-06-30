@@ -5,80 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas Otimizar</title>
-    <!--<a href="https://www.flaticon.com/br/icones-gratis/s" title="s ícones">S ícones criados por Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/br/icones-gratis/pesquisa" title="pesquisa ícones">Pesquisa ícones criados por Dave Gandy - Flaticon</a>-->
     <link rel="shortcut icon" href="img/s.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        
-    </style>
-    
-    
 </head>
-<body>
-    <nav class="navbar" >
-        <div class="container-fluid">
-          <img src="img/s.png" alt="" width="30px">
-          <form class="d-flex" role="search">
-            <input class="" type="search" placeholder="" aria-label="Search" style="padding: 1px;">
-            <button class="btn" type="submit" ><img src="img/lupa.png" alt="" width="20px"></button>
-          </form>
-        </div>
-        <h1 class="h1">Sistemas Otimizar</h1>
-      </nav>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mt-5">
-            <label for="aqr" class="mb-2">Nº da Ordem de Produção</label><br>
-            <input type="number" id="number" style=" border: 2px black solid; border-radius: 8px" placeholder="Digite aqui o nº"><br>
-  
-            <button type="button" class="btn mt-4" style="background-color:#979393; border-color:#979393;">Analisar</button>
-
-          </div>
-          <div class="col-md-4 mt-5">
-            <img src="img/img1.jpg" alt="" class="img-fluid rounded-2" width="400px" >
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mt-0">
-            <h4 class="mt-5" style="text-align: center;">Totalidades</h4>
-            <div>Ordem de fabricação: 
-                <div class="col-md-2" style="background-color: #FFDE59; border: 1px black solid; border-radius: 8px; text-align: center;" id="ordemFabricacao"></div>
-            </div>
-            <div>Sobras:
-                <div class="col-md-2" style="background-color: #FFDE59; border: 1px black solid; border-radius: 8px; text-align: center;" id="sobras"></div>
-            </div>
-
-          </div>
-          
-          
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-            <div class="col-md-4 mt-0 mb-5">
-                <h4 class="mt-5" style="text-align: center;">Fabricação</h4>
-                <div  class="col-md-">Total de ordens que podem ser fabricadas com as sobras: 
-                <div class="col-md-2 mb-4" style="background-color: rgb(175, 0, 0); color: #ffffff; border: 1px black solid; border-radius: 8px; text-align: center;" id="arqExportar"></div>
-
-                <button class="p-2" onclick="exportar()" id="btnExp" style="background-color:#979393; border-color:#979393; border-style: none; border-radius: 8px;">Exportar arquivo</button>
-        </div>
-      </div>
-    </div>
-
-    
-</div>
-<footer>
-    <p>sistemasOtimizar@gmail.com</p>
-</footer>
-</body>
 <script src="js/script.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<body>
+    <div id="interface">
+      <header id="cabecalho">
+        <h1>Sistemas Otimizar</h1>
+        <img id="icone" src="img/s.png">
+        <nav id="barra">
+          <input type="search" placeholder="Busca">
+          <button class="btn" type="submit" >
+            <img src="img/lupa.png" width="20px">
+          </button>
+        </nav>
+      </header>
+
+      <section id="corpo">
+        <h4>Nº da Ordem de Produção</h4>
+        <input id="numero" type="number" placeholder="Digite aqui o nº"><br>
+        <button id="analisar" type="button" class="btn mt-4">Analisar</button>
+        <h3>Totalidades</h3>
+        
+        <nav id="ordem">
+          <h4>Ordens de fabricação:</h4>
+          <input type="search" placeholder="1947">
+        </nav>
+        
+        <nav id="sobras">
+          <h4>Sobras:</h4>
+          <input type="search" placeholder="247">
+        </nav>
+        <h3>Fabricação</h3>
+        
+        <nav id="total">
+          <h5>Total de ordens que podem ser fabricadas com as sobras:</h5>
+          <input type="search" placeholder="32">
+        </nav>
+      </section>
+
+      <aside id="lateral">
+        <img src="img/img1.jpg" width="400px">
+      </aside>
+      
+      <footer id="rodape">
+        <p>sistemasOtimizar@gmail.com</p>
+      </footer>
+    </div>
+  </body>
 </html>
